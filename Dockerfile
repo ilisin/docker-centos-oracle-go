@@ -9,6 +9,8 @@ COPY go /opt/go
 RUN yum install subversion -y
 RUN yum install gcc -y
 RUN yum install git -y
+RUN yum install zip -y
+RUN yum install tar -y
 
 
 RUN mkdir -p /workplace/go/src
