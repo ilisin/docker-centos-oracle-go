@@ -1,4 +1,4 @@
-FROM linux-oracle
+FROM 192.168.10.40:5000/linux-oracle
 
 MAINTAINER lisin gao <ilisin.gao@gmail.com>
 
