@@ -1,4 +1,4 @@
-FROM linux-oracle
+FROM 192.168.10.40:5000/linux-oracle
 
 MAINTAINER lisin gao <ilisin.gao@gmail.com>
 
@@ -24,5 +24,8 @@ ENV CGO_LDFLAGS -L/usr/lib/oracle/11.2/client64/lib
 ENV LD_LIBRARY_PATH /usr/lib/oracle/11.2/client64/lib:/lib:/usr/lib:/usr/local/lib
 ENV PKG_CONFIG_PATH /opt/pkg-config
 ENV PATH $PATH:/opt/go/bin
+
+VOLUME /opt/share
+EXPOSE 10000 10001 10002 10003 10004 10005
 
 CMD ["/bin/sh"]
