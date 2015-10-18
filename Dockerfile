@@ -2,15 +2,10 @@ FROM 192.168.10.40:5000/linux-oracle
 
 MAINTAINER lisin gao <ilisin.gao@gmail.com>
 
-
-COPY pkg-config /opt/pkg-config
+COPY pkg-config /opt/pkg-config                                                                                                                                                                                                                                           
 COPY go /opt/go
 
-RUN yum install subversion -y
-RUN yum install gcc -y
-RUN yum install git -y
-RUN yum install zip -y
-RUN yum install tar -y
+RUN yum install gcc git zip tar -y
 
 
 RUN mkdir -p /workplace/go/src
